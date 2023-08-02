@@ -416,7 +416,7 @@ main.tmpl-home article:last-child hr {
   display: none;
 }
 
-/* Article / Post / Page / Archive */
+/* Article / Post / Page / Archive / Reply */
 main.tmpl-page h1 {
   text-transform: uppercase;
 }
@@ -549,4 +549,16 @@ article > *:is(ul) ul > li::before {
     grid-template-columns: 1fr 3fr;
     display: grid;
   }
+}
+
+.reply .replying-to {
+  font-size: 1rem;
+  margin-bottom: var(--spacing);
+}
+.reply .replying-to img {
+  width: 22px;
+  height: 22px;
+  vertical-align: top;
+  border-radius: 11px;
+  padding: 0px;
 }
