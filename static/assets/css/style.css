@@ -562,3 +562,41 @@ article > *:is(ul) ul > li::before {
   border-radius: 11px;
   padding: 0px;
 }
+
+ul.shelf {
+  padding: 0;
+  list-style: none;
+  margin-bottom: calc(var(--spacing) * 2);
+}
+ul.shelf .book {
+  display: grid;
+  grid-column-gap: 0px;
+  grid-template-columns: 100%;
+  margin-bottom: 15px;
+  /* font-size: 1rem; */
+}
+ /* ul.shelf .title {
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis " [..]";
+} */
+ul.shelf .title a {
+  color: var(--black);
+}
+ul.shelf .author {
+  font-style: italic;
+  text-align: right;
+}
+ul.shelf .title a:before:hover,
+ul.shelf .title a:after:hover {
+  color: var(--pink);
+}
+
+@media (min-width: 576px) {
+  ul.shelf .book {
+    grid-column-gap: 15px;
+    grid-template-columns: 1fr .5fr min-content;
+    margin-bottom: 15px;
+  } 
+}
