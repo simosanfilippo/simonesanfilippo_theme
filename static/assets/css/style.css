@@ -104,11 +104,13 @@ nav li.active a::after {
   color: var(--pink);
 }
 main a:not(:where(.anchor-link,.permalink,.tag-link))::before,
-nav a:not(:where(.anchor-link,.permalink,.tag-link))::before{
+nav a:not(:where(.anchor-link,.permalink,.tag-link))::before,
+body > footer a::before{
   content:"["
  }
 main a:not(:where(.anchor-link,.permalink,.tag-link))::after,
-nav a:not(:where(.anchor-link,.permalink,.tag-link))::after{
+nav a:not(:where(.anchor-link,.permalink,.tag-link))::after,
+body > footer a::after{
  content:"]"
 }
 /* main a[href^="http"]:not(:where(
@@ -323,6 +325,7 @@ body > footer{
 }
 body > footer > p{
   font-size: .875rem;
+  text-align: center;
 }
 body > footer > nav {
   margin: var(--spacing) 0;

@@ -6,4 +6,7 @@
             <li><a href="/surprise-me/">Random!</a></li>
         </ul>
     </nav>
+    {{ range first 1 .Site.Data.bookshelves.currentlyreading }}
+    <p><a href="">Currently reading</a><br/>{{ .title }} <i>by {{ .author}}</i></p>
+    {{ end }}
 </footer>
