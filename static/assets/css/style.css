@@ -350,9 +350,6 @@ body > footer > nav > ul {
   }
 }
 @media (min-width: 576px) {
-  header .logo{
-    font-size: 1.3125rem;
-  }
   body > header {
     margin: var(--spacing) 0 calc(var(--spacing) * 4);
   }
