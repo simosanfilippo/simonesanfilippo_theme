@@ -572,7 +572,7 @@ ul.shelf .book {
   display: grid;
   grid-column-gap: 0px;
   grid-template-columns: 100%;
-  margin-bottom: 15px;
+  margin-bottom: var(--spacing);
   /* font-size: 1rem; */
 }
  /* ul.shelf .title {
@@ -586,7 +586,6 @@ ul.shelf .title a {
 }
 ul.shelf .author {
   font-style: italic;
-  text-align: right;
 }
 ul.shelf .title a:before:hover,
 ul.shelf .title a:after:hover {
@@ -595,8 +594,10 @@ ul.shelf .title a:after:hover {
 
 @media (min-width: 576px) {
   ul.shelf .book {
-    grid-column-gap: 15px;
     grid-template-columns: 1fr .5fr min-content;
-    margin-bottom: 15px;
-  } 
+  }
+  ul.shelf .author {
+    text-align: right;
+    padding-left: calc(var(--spacing) / 2);
+  }
 }
