@@ -575,17 +575,14 @@ ul.shelf .book {
   margin-bottom: var(--spacing);
   /* font-size: 1rem; */
 }
- /* ul.shelf .title {
+ ul.shelf .title {
   font-weight: bold;
-  overflow: hidden;
+  /* overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis " [..]";
-} */
+  text-overflow: ellipsis " [..]"; */
+}
 ul.shelf .title a {
   color: var(--black);
-}
-ul.shelf .author {
-  font-style: italic;
 }
 ul.shelf .title a:before:hover,
 ul.shelf .title a:after:hover {
