@@ -1,4 +1,4 @@
-# crlzff_theme for Micro.blog
+# simonesanfilippo_theme for Micro.blog
 
 Hugo theme for Micro.blog.
 
